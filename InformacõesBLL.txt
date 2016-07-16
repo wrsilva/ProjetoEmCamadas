@@ -1,0 +1,3 @@
+Bussiness Logic Layer - Camada de negócios - BLL - 
+
+responsável por armazenar a lógica da sua aplicação;

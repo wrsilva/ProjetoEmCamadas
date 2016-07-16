@@ -1,0 +1,3 @@
+User Interface ou Interface do usuário - UI - 
+(um formulário windows form, wpf, uma página web, uma aplicação mobile, etc...) 
+- que realiza a interface com o usuário;
