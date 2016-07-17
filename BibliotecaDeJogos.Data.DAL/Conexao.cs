@@ -12,26 +12,26 @@ namespace BibliotecaDeJogos.Data.DAL
     public class Conexao
     {
        
-        public static string conection = ConfigurationManager.ConnectionStrings["conectionString"].ToString();
-        public static SqlConnection connection = new SqlConnection(conection);
+        //public static string conection = ConfigurationManager.ConnectionStrings["conectionString"].ToString();
+        //public static SqlConnection connection = new SqlConnection(conection);
 
-        static public void Abrir()
-        {
+        //static public void Abrir()
+        //{
 
-            if (connection.State == ConnectionState.Closed)
-            {
-                connection.Open();
-            }
-        }
+        //    if (connection.State == ConnectionState.Closed)
+        //    {
+        //        connection.Open();
+        //    }
+        //}
 
 
-        static public void Desconectar()
-        {
+        //static public void Desconectar()
+        //{
 
-            if (connection.State == ConnectionState.Open)
-            {
-                connection.Close();
-            }
-        }
+        //    if (connection.State == ConnectionState.Open)
+        //    {
+        //        connection.Close();
+        //    }
+        //}
     }
 }

@@ -37,11 +37,11 @@ namespace BibliotecaDeJogos.Interface.UI.Autenticacao
                     {
                         lbnStatus.Text = "Email ou senha incorreta";
                     }
-                    catch (Exception)
+                    catch (Exception ex)
                     {
 
-
-                        lbnStatus.Text = "Ocorreu um erro inesperado, favor consultar o administrador do sistema";
+                        lbnStatus.Text = ex.ToString();
+                        //lbnStatus.Text = "Ocorreu um erro inesperado, favor consultar o administrador do sistema";
                     }
                 }
                 else

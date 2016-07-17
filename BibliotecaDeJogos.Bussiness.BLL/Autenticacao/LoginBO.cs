@@ -15,14 +15,14 @@ namespace BibliotecaDeJogos.Bussiness.BLL.Autenticacao
         public Usuario UsuarioCadastrado(string nome, string senha)
         {
             _userDAO = new UsuariosDAO();
-            var usuerio = _userDAO.ObterUsuarioSenha(nome, senha);
-            if (usuerio == null)
+            var usuario = _userDAO.ObterUsuarioSenha(nome, senha);
+            if ((usuario.Nome == null )&&(usuario.Email== null)&&(usuario.Id <= 0))
             {
                 throw new UsuarioNaoCadastrado();
             }
             else
             {
-                return usuerio;
+                return usuario;
             }
         }
     }
