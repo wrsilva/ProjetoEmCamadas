@@ -17,7 +17,7 @@ namespace BibliotecaDeJogos.Data.DAL
         //===============================================
         // classe destinada à gestão da base de dados
         //===============================================
-        public static SqlConnection sqlconnection = null;
+        private static SqlConnection sqlconnection = null;
         private static SqlCommand comando = null;
 
         //================================================
