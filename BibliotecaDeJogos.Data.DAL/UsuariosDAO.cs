@@ -20,7 +20,7 @@ namespace BibliotecaDeJogos.Data.DAL
           
             try
             {
-                
+
                 var command = new SqlCommand();
                 string comandoSql = "SELECT * FROM Usuarios WHERE Email = '" + usuario + "'  AND Senha = '" + senha + "'".ToString();
                 SqlDataReader reader = ConexaoBD.ExecReader(comandoSql);
